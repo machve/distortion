@@ -1,0 +1,17 @@
+div.parent-div {
+    display: grid;
+    grid-template-columns: 100px 900px;
+}
+
+div .animate-div {
+    height: 70px;
+    margin: 20px;
+    background-color: #0ff1ce;
+    width: 0;
+    transition: all 2s ease;
+    animation-delay: 2s;
+}
+
+h1 {
+    margin: auto;
+}
