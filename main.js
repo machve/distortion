@@ -5,7 +5,9 @@ let childDiv;
 let barChart;
 let barChartParent = document.querySelector(".bar-chart");
 let counter = 0;
-let arrayChildren = [];
+
+let kid;
+let kid2;
 
 function getData() {
 
@@ -19,19 +21,27 @@ function showData(json) {
 
     childDiv = document.createElement('h1');
     childDiv.textContent = queueNumber;
-    arrayChildren.push(childDiv);
+ 
     parentDiv.appendChild(childDiv);
 
     barChart = document.createElement('div');
 
     barChart.setAttribute('class', 'animate-div')
     parentDiv.appendChild(barChart);
-
-
+kid = parentDiv.children[1];
+kid2 = parentDiv.children[0];
+console.log(kid)
     counter++;
     setTimeout(function addWidth() {
         barChart.style.width = (queueNumber * 20 + 'px')
     }, 0);
+
+    if (counter > 4) {
+kid.remove();
+kid2.remove();
+
+
+    }
 
 }
 
