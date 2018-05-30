@@ -8,8 +8,8 @@ div .animate-div {
     margin: 20px;
     background-color: #0ff1ce;
     width: 0;
-    transition: all 2s ease;
-    animation-delay: 2s;
+    transition: 2s ease;
+
 }
 
 h1 {

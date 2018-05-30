@@ -23,14 +23,18 @@ function showData(json) {
     parentDiv.appendChild(childDiv);
 
     barChart = document.createElement('div');
+
     barChart.setAttribute('class', 'animate-div')
     parentDiv.appendChild(barChart);
 
-    barChart.style.width = (queueNumber * 20 + 'px');
 
     counter++;
+    setTimeout(function addWidth() {
+        barChart.style.width = (queueNumber * 20 + 'px')
+    }, 0);
 
 }
 
 
-setInterval(getData, 10000);
+
+setInterval(getData, 5000);
