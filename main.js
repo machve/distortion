@@ -1,7 +1,7 @@
 "use strict"
 let parentDiv = document.querySelector(".parent-div");
 let queueNumber;
-let childDiv;
+let childText;
 let barChart;
 let barChartParent = document.querySelector(".bar-chart");
 let counter = 0;
@@ -19,17 +19,20 @@ function showData(json) {
     queueNumber = json.inQueue;
     console.log(queueNumber);
 
-    childDiv = document.createElement('h1');
-    childDiv.textContent = queueNumber;
+    childText = document.createElement('h1');
+    childText.textContent = queueNumber;
  
-    parentDiv.appendChild(childDiv);
+    parentDiv.appendChild(childText);
 
     barChart = document.createElement('div');
 
     barChart.setAttribute('class', 'animate-div')
-    parentDiv.appendChild(barChart);
-kid = parentDiv.children[1];
-kid2 = parentDiv.children[0];
+
+    parentDiv.insertBefore(barChart, parentDiv.children[0]);
+    parentDiv.insertBefore(childText, parentDiv.children[0]);
+    // parentDiv.appendChild(barChart);
+kid = parentDiv.children[6];
+kid2 = parentDiv.children[7];
 console.log(kid)
     counter++;
     setTimeout(function addWidth() {

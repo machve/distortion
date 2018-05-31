@@ -1,17 +1,56 @@
-div.parent-div {
+body {
+    margin: 0;
+   background-image: url(coctails2.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment:fixed;
+   color: #1e3264;
+   overflow: hidden;
+   font-family: 'Bowlby One SC', cursive;
+}
+/* div.background-color#color{
+    background: linear-gradient(145deg,#ffc867,#f037a6);
+ 
+  
+    margin: 0 !important;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    width: 90em;
+    height: 56em;
+} */
+
+h1.headline {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 3em;
+margin-top: 2em; 
+  
+}
+h2.people-queueing {
+    font-size: 30px;
+    margin-top: 4em;
+    margin-left: 7em;
+}
+div.parent-div#parent {
+    position: absolute;
     display: grid;
-    grid-template-columns: 100px 900px;
+    grid-template-columns: 100px 600px;
+
+    margin: 0 11em;
 }
 
 div .animate-div {
-    height: 70px;
-    margin: 20px;
+    height: 50px;
+    margin: 10px;
     background-color: #0ff1ce;
     width: 0;
     transition: 2s ease;
-
+    
 }
 
 h1 {
     margin: auto;
+    font-size: 24px;
 }
