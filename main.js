@@ -50,4 +50,4 @@ kid2.remove();
 
 
 
-setInterval(getData, 5000);
+setInterval(getData, 10000);

@@ -30,7 +30,7 @@ margin-top: 2em;
 }
 h2.people-queueing {
     font-size: 30px;
-    margin-top: 4em;
+    margin-top: 3em;
     margin-left: 7em;
 }
 div.parent-div#parent {
@@ -44,7 +44,7 @@ div.parent-div#parent {
 div .animate-div {
     height: 50px;
     margin: 10px;
-    background-color: #0ff1ce;
+    background-image: linear-gradient(to right top, #0ff1ce, #00e8cd, #00e0cb, #00d7c9, #00cec6);
     width: 0;
     transition: 2s ease;
     
